@@ -1,0 +1,15 @@
+This Project will be reading two CSV files containing data on confirmed cases and deaths from COVID-19, respectively, and then performing some data preparation, visualization, and analysis on the data.
+
+The data preparation steps include:
+
+Creating a new DataFrame called world with two columns: "Country" and "cases"
+Populating the "Country" column with the column names (countries) from the confirmed cases data
+Calculating the total number of confirmed cases for each country and storing the results in the "cases" column
+Cleaning up the country names by removing any dots or parentheses
+Reading in a CSV file called "continents2.csv" and storing it in a DataFrame called continent
+Converting the "name" column in the continent DataFrame to uppercase
+Creating a new column in the world DataFrame called "Cases Range" and assigning to each row in this column a categorical value based on the corresponding value in the "cases" column
+Creating a new column in the world DataFrame called "Alpha3" and storing the "alpha-3" value for each country from the continent DataFrame
+The code then generates a choropleth map of the world showing the spread of COVID-19 cases by country, using the Plotly Express library.
+
+Next, the code generates two line plots showing the daily number of confirmed cases and deaths from COVID-19 over time. The plots also show the 5-day moving average of the data.
